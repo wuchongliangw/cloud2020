@@ -15,6 +15,31 @@ public final class RestResponse<T> implements Serializable {
      * 成功
      */
     public static int CODE_SUCCESS = 0;
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getErrmsg() {
+        return errmsg;
+    }
+
+    public void setErrmsg(String errmsg) {
+        this.errmsg = errmsg;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
     /**
      * 一般错误
      */
@@ -106,6 +131,9 @@ public final class RestResponse<T> implements Serializable {
      * 返回数据
      */
     private T data;
+
+    private RestResponse() {
+    }
 
     private RestResponse(Integer code, String errmsg, T data) {
         this.code = code;
