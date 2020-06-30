@@ -1,6 +1,5 @@
 package com.meamei.service;
 
-import com.meamei.entity.Payment;
 import com.meamei.entity.RestResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;

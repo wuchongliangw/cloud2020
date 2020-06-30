@@ -15,12 +15,4 @@ public class Payment implements Serializable {
     private Long id;
 
     private String serial;
-
-    @Override
-    public String toString() {
-        return "Payment{" +
-                "id=" + id +
-                ", serial='" + serial + '\'' +
-                '}';
-    }
 }
